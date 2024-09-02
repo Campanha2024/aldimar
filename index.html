@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#ToComAldimar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap">
+    <meta name="description" content="Mostre seu apoio ao ALDIMAR com uma imagem de perfil personalizada!">
+    <meta name="keywords" content="eleicoes2024, montesclaros, vereador">
+    <meta property="og:image" itemprop="image" content="modelo.png" />
+</head>
+<body>
+    <article class="container">
+        <h1>#TôCom<br><span style="font-size:1.4em;">ALDIMAR</span></h1>
+        <h2 style="margin-bottom: 10px;">1. Envie uma foto de perfil:</h2>
+        <small style="color:gray;display:block;">Fotos quadradas funcionam melhor</small>
+        <input type="file" id="upload" accept="image/*" onchange="loadImage(event)">
+        
+        <h2>2. Escolha uma moldura:</h2>
+        <div class="twibbon-options">
+            <img src="opcao1.png" alt="Twibbon 1" onclick="selectTwibbon('opcao1.png')">
+            <img src="opcao2.png" alt="Twibbon 2" onclick="selectTwibbon('opcao2.png')">
+            <img src="opcao3.png" alt="Twibbon 3" onclick="selectTwibbon('opcao3.png')">
+            
+        </div>
+
+        <h4>Vai ficar assim:</h4>
+        <div class="image-preview">
+            <img id="profilePicture" src="default-avatar.png" alt="Foto de perfil" class="profile">
+            <img id="twibbonOverlay" src="opcao1.png" alt="design" class="twibbon">
+        </div>
+
+        <button onclick="downloadImage()"><h2>3. Baixe a imagem aqui</h2></button>
+        
+        <p class="cinza">INSERIR AQUI O AVISO LEGAL</p>
+
+    </article>
+
+    <script src="script.js"></script>
+
+<style>
+        body {
+            background: linear-gradient(to right, #0169a5, #244081);
+</body>
+</html>
